@@ -1,0 +1,19 @@
+// will create new stack frame on each function call
+// can cause stackoverflow
+#f.private factorial(n: Int): Int {
+    if n <= 1 then 1
+    else
+        n * factorial(n - 1)
+}
+
+// won't create new stack frame on each function call
+#f.private
+  .tailrec factorial(n: Int, acc: Int = 1): Int {
+    if n <= 1 then acc
+    else
+        factorial(n - 1, n * acc)
+}
+
+#f main {
+    val result = factorial(5)
+}
