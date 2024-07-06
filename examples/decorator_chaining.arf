@@ -1,4 +1,4 @@
-#f.private
+#f.pub
   .implicit sum(x, y: Int): Int {
     x + y
 #}
