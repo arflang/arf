@@ -1,0 +1,3 @@
+val lambdaFunction = #f (x, y: Int): Int {
+    x + y
+}

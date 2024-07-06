@@ -1,8 +1,0 @@
-#f.private sum[T](x, y: Int): T {
-    x + y
-}
-
-
-#f main {
-    val result = sum(2, 3)
-}

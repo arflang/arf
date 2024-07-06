@@ -1,0 +1,8 @@
+/* you can call either
+ * 2 `min` 3
+ * or
+ * min(2, 3)
+ */
+#f.infix min(x, y: Int): Int {
+    if x > y then x else y
+}

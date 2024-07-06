@@ -1,0 +1,9 @@
+// you can't access outside
+#f.private sum(x, y: Int): Int {
+    x + y
+}
+
+// you can access if the file is in <PACKAGE_NAME> otherwise you can't access
+#f.private(<PACKAGE_NAME>) sum(x, y: Int): Int {
+    x + y
+}

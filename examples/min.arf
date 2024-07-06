@@ -1,9 +1,0 @@
-#f.private.infix min(x, y: Int): Int {
-    if x > y then x else y
-}
-
-#f main {
-    // or you can also 
-    // min(2, 3)
-    val result = 2 `min` 3
-}
