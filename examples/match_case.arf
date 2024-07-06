@@ -1,0 +1,8 @@
+#f match_case(n: Int): String {
+    n match {
+        0          => "Zero"
+        n < 0      => "Negative"
+        n % 2 == 0 => "Even"
+        _          => "Odd"
+    } 
+#}

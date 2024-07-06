@@ -1,0 +1,17 @@
+#f option(someOption: Option[Int]): Int {
+    someOption match {
+        Some(0)               => 0
+        Some(1)               => 1
+        Some(_) if _ % 2 == 0 => 2
+        _                     => -1
+    }
+#}
+
+#f option2(someOption: Option[(Char, Int)]): Int {
+    someOption match {
+        Some(('A', _)) if _ % 2 == 0    => 0
+        Some(('b', 'a'))                => 1
+        Some(_)                         => 2
+        None                            => -1
+    }
+#}

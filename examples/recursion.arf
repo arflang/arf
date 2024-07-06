@@ -3,7 +3,7 @@
     if n <= 1 then 1
     else
         n * factorial(n - 1)
-}
+#}
 
 // won't create new stack frame on each function call
 #f.private
@@ -11,4 +11,4 @@
     if n <= 1 then acc
     else
         factorial(n - 1, n * acc)
-}
+#}
