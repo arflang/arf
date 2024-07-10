@@ -23,7 +23,7 @@ The syntax is specified using Extended Backur-Naur Form (EBNF). In particular:
 - `[]` specifies option (0 or 1 times)
 - `{}` specifies repetition (0 to n times)
 
-## Notation
+## Grammar
 
 ### Identifiers
 
