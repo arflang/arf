@@ -1,0 +1,5 @@
+package stdlib.util
+
+export {
+    random
+}

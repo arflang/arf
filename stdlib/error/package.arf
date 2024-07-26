@@ -1,0 +1,5 @@
+package stdlib.error
+
+export {
+    exceptions,
+}
