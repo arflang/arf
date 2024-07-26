@@ -1,0 +1,24 @@
+package stdlib.functional 
+
+module Monoid {
+    trait [T] extends Semigroup[T] {
+        fun empty: T
+        fun combine(a: T, b: T): T        
+    }
+
+    static {
+        fun call[T](instance: using Monoid[T]): Monoid[T] =
+            instance
+    }
+
+    instances {
+        of [Int] extends Super with {
+            fun empty: Int = 0
+        } as intAddition
+
+        of [String] extends Super with {
+            fun empty: String = ""
+            override fun combine(a: String, b: String) = a + b
+        } as strConcat
+    }
+}
